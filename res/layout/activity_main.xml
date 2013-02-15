@@ -1,0 +1,146 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    
+    >
+
+<LinearLayout
+    android:id="@+id/linearLayout1"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content"
+    >
+
+    <TextView
+        android:id="@+id/speedView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        
+        android:layout_weight="25"
+        android:text= "@string/speed"
+        tools:context=".MainActivity" 
+        />
+
+    <TextView
+        android:id="@+id/bearing"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="25"
+        android:text= "@string/bearing"
+        tools:context=".MainActivity" 
+        />
+    
+    <TextView
+        android:id="@+id/speak"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="25"
+        android:text= "@string/test"
+        tools:context=".MainActivity" 
+        />
+    
+</LinearLayout>
+
+
+	<LinearLayout
+		android:id="@+id/linearLayout2"
+		android:layout_below="@id/linearLayout1"
+		android:orientation="horizontal"
+		android:layout_width="match_parent" 
+		android:layout_height="wrap_content"
+    >
+	<CheckBox
+		android:id="@+id/speedAutoCheckBox"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="25"
+		android:text="Vitesse auto"
+		/>
+		<CheckBox
+			android:id="@+id/bearingAutoCheckBox"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="25"
+			android:text="cap auto"
+		/>
+		<CheckBox
+			android:id="@+id/autoCheckBox"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="25"
+			android:text="disponible"
+		/>
+
+	</LinearLayout>
+	
+<LinearLayout
+    android:id="@+id/linearLayout3"
+    android:layout_below="@id/linearLayout2"
+    android:orientation="horizontal"
+    android:layout_width="match_parent" 
+    android:layout_height="wrap_content"
+    >
+
+    <SeekBar
+        android:id="@+id/seekBarSpeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="25" 
+        android:importantForAccessibility="no"
+        android:max="100"
+        android:progress="5"
+        />
+    <SeekBar
+        android:id="@+id/seekBarBearing"        
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="25"
+        />
+    <SeekBar
+        android:id="@+id/seekBarTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="25"
+        android:max="30"
+        android:progress="10"
+        /> 
+</LinearLayout>
+
+<LinearLayout 
+    android:id="@+id/linearLayout4"
+    android:layout_below="@id/linearLayout3"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent"
+    >   
+    <Button 
+        android:id="@+id/buttonSpeed"
+    	android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="25"
+        android:text="Vitesse"
+    	/>
+    <Button 
+        android:id="@+id/buttonBearing"
+    	android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="25"
+        android:text="Cap"
+    	/>
+    <ImageButton 
+        android:id="@+id/buttonSpeak"
+    	android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="25"
+        android:contentDescription="reconnaissance vocale"
+        android:src="@+android:drawable/ic_btn_speak_now"
+    	/>
+
+</LinearLayout>
+
+    
+</RelativeLayout>

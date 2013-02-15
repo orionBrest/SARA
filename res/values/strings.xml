@@ -1,0 +1,16 @@
+<resources>
+
+    <string name="app_name">tex2spichApp</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">Tex2Spich</string>
+    <string name="tex2Spich"/>
+    <string name="speed"/>
+    <string name="bearing"/>
+    <string name="latitude"/>
+    <string name="longitude"/>
+    <string name="test"/>
+    <integer-array name="speedAuto"></integer-array>
+    <string name="speedTreshold"/>
+
+</resources>
